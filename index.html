@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercury Drug Delivery Service</title>
+    <style>
+      .formgroup {
+        background-color: #8b8b8b;
+        padding: 20px;
+        width: 76%;
+        margin-left: 10%;
+      }
+      #heading {
+        background-color: #800000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .container {
+        border: 2px solid;
+        margin: 8px;
+        padding: 4px;
+        border-radius: 6px;
+      }
+      td {
+        border: 1px solid black;
+        color: gainsboro;
+        height: 20px;
+        padding: 5px;
+      }
+      .avail {
+        color: black;
+        font-weight: bold;
+      }
+      #licence,
+      #pan,
+      #jpeg,
+      #refridge {
+        color: black;
+        font-weight: bold;
+      }
+      #terms {
+        font-weight: 600;
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      #btn {
+        margin-top: 15px;
+        margin-left: 10px;
+        color: #800000;
+        background-color: #8b8b8b;
+        border-radius: 6px;
+        padding: 4px;
+        font-weight: 700;
+      }
+      #btn:hover {
+        background-color: #800000;
+        color: #8b8b8b;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="formgroup">
+      <h2 id="heading">Mercury Drug Delivery Service - Partner Invite</h2>
+      <table class="container">
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <label id="pname">Pharmacy name*</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="pin">Pin(Primary Location)*</label>
+            </td>
+            <td>
+              <label id="city">City*</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="powner">Pharmacy owner*</label>
+            </td>
+            <td>
+              <label id="phno">Phone number*</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="email">Email*</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="link">Website link/online listing link</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="outlet">Number of outlets*</label>
+            </td>
+            <td>
+              <label id="Poutlet">Primary Area of outlets*</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="cost">Minimum purchase cost*</label>
+            </td>
+            <td>
+              <label id="Establish">Establishment: Independent/Chain*</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="avail">
+                Medicines available:
+                <input type="checkbox" id="list" name="pharma" />
+                <label for="list">General Sales List Medicines(GSL)</label>
+                <input type="checkbox" id="medicine" name="pharma" />
+                <label for="medicine">Pharmacy Medicines(P)</label>
+                <input type="checkbox" id="prescript" name="pharma" />
+                <label for="prescript">Prescription Only Medicines(POM)</label>
+                <input type="checkbox" id="control" name="pharma" />
+                <label for="control">Controlled Drugs(CDs)</label>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="licence">Retail Drug Licence(Jpeg/PDF)*</label><br />
+              <input type="file" id="licence" />
+            </td>
+            <td>
+              <label id="pan">GSTIN/PAN*</label><br />
+              <input type="file" id="pan" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="jpeg">FSSAI(Jpeg/PDF)*</label><br />
+              <input type="file" id="jpeg" />
+            </td>
+            <td>
+              <label id="refridge">
+                Facade/Pharmacy-shelves/Refriderator(Jpeg)</label
+              >
+              <br />
+              <input type="file" id="refridge" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <input type="checkbox" id="terms" />
+        <label for="terms">
+          <a href="terms" id="terms"> I agree to terms of services</a>
+        </label>
+      </div>
+      <input type="button" id="btn" value="SUBMIT" />
+    </form>
+  </body>
+</html>
